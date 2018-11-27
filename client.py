@@ -8,7 +8,6 @@ try:
     (Programa, Metodo, Direccion) = sys.argv
 except ValueError:
      sys.exit("Usage: python3 client.py method receiver@IP:SIPport")
-
 try:
     METODO = Metodo.upper()
     NAME = Direccion.split('@')[0]

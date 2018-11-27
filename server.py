@@ -44,6 +44,7 @@ if __name__ == "__main__":
         sys.exit("Usage: python server.py IP port audio_file")
     serv = socketserver.UDPServer((SERVER, int(PORT)), EchoHandler)
     print('Listening...' + '\n')
+
     try:
         serv.serve_forever()
     except KeyboardInterrupt:
